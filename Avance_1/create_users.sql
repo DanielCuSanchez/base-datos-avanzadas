@@ -1,0 +1,32 @@
+
+-- Europa user
+CREATE USER europa IDENTIFIED BY "oracle"
+PROFILE DEFAULT;
+GRANT ALUMNO TO europa;
+ALTER USER europa DEFAULT ROLE ALL;
+-- Quitar restriccion de espacio en tablespace de usuario
+ALTER USER europa QUOTA UNLIMITED ON USERS;
+
+-- america user
+CREATE USER america IDENTIFIED BY "oracle"
+PROFILE DEFAULT;
+GRANT ALUMNO TO america;
+ALTER USER america DEFAULT ROLE ALL;
+ALTER USER america QUOTA UNLIMITED ON USERS;
+
+-- asia user
+CREATE USER asia IDENTIFIED BY "oracle"
+PROFILE DEFAULT;
+GRANT ALUMNO TO asia;
+ALTER USER asia DEFAULT ROLE ALL;
+ALTER USER asia QUOTA UNLIMITED ON USERS;
+
+-- africa user
+CREATE USER africa IDENTIFIED BY "oracle"
+PROFILE DEFAULT;
+GRANT ALUMNO TO africa;
+ALTER USER africa DEFAULT ROLE ALL;
+ALTER USER africa QUOTA UNLIMITED ON USERS;
+
+--COMANDO UTILITARIO (No apto para producción)
+grant select any table to alumno;

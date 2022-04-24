@@ -1,0 +1,16 @@
+drop procedure actualiza_ventas;
+drop procedure actualiza_ubicacion;
+drop procedure actualiza_producto;
+drop procedure pdimtiempo;
+drop sequence seq_h_ventas;
+drop sequence seq_d_ubicacion;
+drop sequence seq_d_tiempo;
+drop sequence seq_d_producto;
+drop table h_ventas cascade constraints;
+drop table d_producto cascade constraints;
+drop table d_ubicacion cascade constraints;
+drop table d_tiempo cascade constraints;
+drop view v_catalogoproductos;
+drop view v_catalogoproveedores;
+drop view v_catalogosucursales;
+drop view v_ventas;
